@@ -12,7 +12,9 @@ function PostForm({create}) {
     <form>
         <MyInput type="text" value={post.title} onChange={(e)=>setPost({...post, title:e.target.value})} placeholder="Insert title"/>
         <MyInput type="text" value={post.description} onChange={(e)=>setPost({...post, description:e.target.value})} placeholder="Insert description"/>
-        <Button onClick={addPost}>Add post</Button>
+        <div style={{display:"flex", alignItems: "center",justifyContent: "center", padding:"2px"}}>
+          <Button onClick={addPost}>Add post</Button>
+        </div>
   </form>
   )
 }
